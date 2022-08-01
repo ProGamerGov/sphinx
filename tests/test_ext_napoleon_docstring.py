@@ -2402,7 +2402,7 @@ definition_after_normal_text : int
             "defaultdict",
             "int, float, or complex",
             "int or float or None, optional",
-            "list of of list int or float, optional",
+            "list of list of int or float, optional",
             "tuple of list of int",
             '{"F", "C", "N"}',
             "{'F', 'C', 'N'}, default: 'F'",
