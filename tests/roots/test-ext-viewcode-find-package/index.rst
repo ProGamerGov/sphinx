@@ -1,7 +1,7 @@
 viewcode
 ========
 
-.. py:automodule:: main_package.subpackage.submodule
+.. currentmodule:: main_package.subpackage.submodule
 
 .. autofunction:: func1
 
@@ -9,9 +9,10 @@ viewcode
 
 .. autoclass:: Class3
 
+.. currentmodule:: main_package
 
-.. autoclass:: main_package.subpackage.submodule.Class3
+.. autoclass:: subpackage.submodule.Class3
    :members:
 
-.. automodule:: main_package.subpackage.submodule
+.. automodule:: subpackage.submodule
    :members:
