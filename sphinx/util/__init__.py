@@ -261,8 +261,9 @@ def get_full_modname(modname: str, attribute: str) -> str:
         # Attempt to find full path of module
         module_path = modname.split('.')
         actual_path = __import__(module_path[0], globals(), locals(), [], 0)
-        for mod in module_path[1:]:
-            actual_path = getattr(actual_path, mod)
+        if len(module_path) > 1:
+            for mod in module_path[1:]:
+                actual_path = getattr(actual_path, mod)
 
         # Extract path from module name
         actual_path_str = str(actual_path).split("'")[1]
