@@ -139,6 +139,7 @@ def test_local_source_files(app, status, warning):
             }
         return (source, tags)
 
-    app.connect('viewcode-find-source', find_source)
+    # app.connect('viewcode-find-source', find_source)
     app.builder.build_all()
     result = (app.outdir / 'index.html').read_text(encoding='utf8')
+    raise ValueError(result)
