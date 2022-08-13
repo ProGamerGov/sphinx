@@ -119,27 +119,6 @@ def test_local_source_files(app, status, warning):
 
 @pytest.mark.sphinx(testroot='ext-viewcode-find-package')
 def test_local_source_files(app, status, warning):
-    def find_source(app, modname):
-        if modname == 'main_package':
-            source = (app.srcdir / 'main_package/__init__.py').read_text(encoding='utf8')
-            tags = {
-                'func1': ('def', 1, 1),
-                'Class1': ('class', 1, 1),
-                'main_package.subpackage.submodule.func1': ('def', 1, 1),
-                'main_package.subpackage.submodule.Class1': ('class', 1, 1),
-            }
-        else:
-            source = (app.srcdir / 'main_package/subpackage/_subpackage2/submodule.py').read_text(encoding='utf8')
-            tags = {
-                'main_package.subpackage.submodule.func1': ('def', 11, 15),
-                'Class1': ('class', 19, 22),
-                'main_package.subpackage.submodule.Class1': ('class', 19, 22),
-                'Class3': ('class', 25, 30),
-                'main_package.subpackage.submodule.Class3.class_attr': ('other', 29, 29),
-            }
-        return (source, tags)
-
-    # app.connect('viewcode-find-source', find_source)
     app.builder.build_all()
     result = (app.outdir / 'index.html').read_text(encoding='utf8')
     raise ValueError(result)

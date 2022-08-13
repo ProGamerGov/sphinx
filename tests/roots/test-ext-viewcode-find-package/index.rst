@@ -1,30 +1,27 @@
 viewcode
 ========
 
-.. py:module:: main_package.subpackage
-
-.. py:function:: func1(a, b)
-
-   This is func1
-
-.. py:function:: main_package.subpackage.func1(a, b)
-
-   This is func1
-
 .. py:module:: main_package.subpackage.submodule
 
-.. py:class:: Class1
+.. autofunction:: func1
 
-   This is Class1
+.. autoclass:: Class1
 
-.. py:class:: Class3
+.. autoclass:: Class3
 
-   This is Class3
 
-.. py:class:: main_package.subpackage.submodule.Class1
+.. literalinclude:: main_package/__init__.py
+   :language: python
+   :pyobject: submodule
 
-   This is Class1
+.. literalinclude:: main_package/subpackage/_subpackage2/submodule.py
+   :language: python
+   :pyobject: func1
+   :pyobject: Class1
+   :pyobject: Class2
 
-.. py:attribute:: main_package.subpackage.submodule.Class3.class_attr
+.. autoclass:: main_package.subpackage.submodule.Class3
+   :members:
 
-   This is the class attribute class_attr
+.. automodule:: main_package.subpackage.submodule
+   :members:
