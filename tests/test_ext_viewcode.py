@@ -129,7 +129,7 @@ def test_local_source_files(app, status, warning):
                 'main_package.subpackage.submodule.Class1': ('class', 1, 1),
             }
         else:
-            source = (app.srcdir / 'main_package/subpackage1/_subpackage2/submodule.py').read_text(encoding='utf8')
+            source = (app.srcdir / 'main_package/subpackage/_subpackage2/submodule.py').read_text(encoding='utf8')
             tags = {
                 'main_package.subpackage.submodule.func1': ('def', 11, 15),
                 'Class1': ('class', 19, 22),
