@@ -9,15 +9,11 @@ viewcode
 
 .. autoclass:: Class3
 
-
-.. literalinclude:: main_package/__init__.py
-   :language: python
-
 .. literalinclude:: main_package/subpackage/_subpackage2/submodule.py
    :language: python
    :pyobject: func1
    :pyobject: Class1
-   :pyobject: Class2
+   :pyobject: Class3
 
 .. autoclass:: main_package.subpackage.submodule.Class3
    :members:
