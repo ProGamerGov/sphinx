@@ -12,7 +12,6 @@ viewcode
 
 .. literalinclude:: main_package/__init__.py
    :language: python
-   :pyobject: submodule
 
 .. literalinclude:: main_package/subpackage/_subpackage2/submodule.py
    :language: python
