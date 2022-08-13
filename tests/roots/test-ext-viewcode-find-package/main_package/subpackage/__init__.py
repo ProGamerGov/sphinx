@@ -1,1 +1,1 @@
-from main_package.subpackage._subpackage2.submodule import Class1, func1  # NOQA
+from main_package.subpackage._subpackage2 import submodule  # NOQA
