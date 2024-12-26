@@ -63,14 +63,14 @@ Getting Started
 ~~~~~~~~~~~~~~~
 
 1. After :doc:`setting up Sphinx </usage/quickstart>` to build your docs,
-   enable napoleon in the Sphinx `conf.py` file::
+   enable napoleon in the Sphinx ``conf.py`` file::
 
        # conf.py
 
        # Add napoleon to the extensions list
        extensions = ['sphinx.ext.napoleon']
 
-2. Use `sphinx-apidoc` to build your API documentation::
+2. Use ``sphinx-apidoc`` to build your API documentation::
 
        $ sphinx-apidoc -f -o docs/source projectdir
 
@@ -94,38 +94,38 @@ Docstring Sections
 
 All of the following section headers are supported:
 
-    * ``Args`` *(alias of Parameters)*
-    * ``Arguments`` *(alias of Parameters)*
-    * ``Attention``
-    * ``Attributes``
-    * ``Caution``
-    * ``Danger``
-    * ``Error``
-    * ``Example``
-    * ``Examples``
-    * ``Hint``
-    * ``Important``
-    * ``Keyword Args`` *(alias of Keyword Arguments)*
-    * ``Keyword Arguments``
-    * ``Methods``
-    * ``Note``
-    * ``Notes``
-    * ``Other Parameters``
-    * ``Parameters``
-    * ``Return`` *(alias of Returns)*
-    * ``Returns``
-    * ``Raise`` *(alias of Raises)*
-    * ``Raises``
-    * ``References``
-    * ``See Also``
-    * ``Tip``
-    * ``Todo``
-    * ``Warning``
-    * ``Warnings`` *(alias of Warning)*
-    * ``Warn`` *(alias of Warns)*
-    * ``Warns``
-    * ``Yield`` *(alias of Yields)*
-    * ``Yields``
+* ``Args`` *(alias of Parameters)*
+* ``Arguments`` *(alias of Parameters)*
+* ``Attention``
+* ``Attributes``
+* ``Caution``
+* ``Danger``
+* ``Error``
+* ``Example``
+* ``Examples``
+* ``Hint``
+* ``Important``
+* ``Keyword Args`` *(alias of Keyword Arguments)*
+* ``Keyword Arguments``
+* ``Methods``
+* ``Note``
+* ``Notes``
+* ``Other Parameters``
+* ``Parameters``
+* ``Return`` *(alias of Returns)*
+* ``Returns``
+* ``Raise`` *(alias of Raises)*
+* ``Raises``
+* ``References``
+* ``See Also``
+* ``Tip``
+* ``Todo``
+* ``Warning``
+* ``Warnings`` *(alias of Warning)*
+* ``Warn`` *(alias of Warns)*
+* ``Warns``
+* ``Yield`` *(alias of Yields)*
+* ``Yields``
 
 Google vs NumPy
 ~~~~~~~~~~~~~~~
@@ -271,8 +271,8 @@ Configuration
 -------------
 
 Listed below are all the settings used by napoleon and their default
-values. These settings can be changed in the Sphinx `conf.py` file. Make
-sure that "sphinx.ext.napoleon" is enabled in `conf.py`::
+values. These settings can be changed in the Sphinx ``conf.py`` file. Make
+sure that "sphinx.ext.napoleon" is enabled in ``conf.py``::
 
     # conf.py
 
@@ -398,7 +398,7 @@ sure that "sphinx.ext.napoleon" is enabled in `conf.py`::
 
    .. seealso::
 
-      :attr:`napoleon_use_admonition_for_examples`
+      :confval:`napoleon_use_admonition_for_examples`
 
 .. confval:: napoleon_use_admonition_for_references
 
@@ -408,7 +408,7 @@ sure that "sphinx.ext.napoleon" is enabled in `conf.py`::
 
    .. seealso::
 
-      :attr:`napoleon_use_admonition_for_examples`
+      :confval:`napoleon_use_admonition_for_examples`
 
 .. confval:: napoleon_use_ivar
 
@@ -471,14 +471,14 @@ sure that "sphinx.ext.napoleon" is enabled in `conf.py`::
    keywords.
    *Defaults to True.*
 
-   This behaves similarly to  :attr:`napoleon_use_param`. Note unlike docutils,
+   This behaves similarly to :confval:`napoleon_use_param`. Note unlike docutils,
    ``:keyword:`` and ``:param:`` will not be treated the same way - there will
    be a separate "Keyword Arguments" section, rendered in the same fashion as
    "Parameters" section (type links created if possible)
 
    .. seealso::
 
-      :attr:`napoleon_use_param`
+      :confval:`napoleon_use_param`
 
 .. confval:: napoleon_use_rtype
 
